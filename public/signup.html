@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flight Itinerary - Sign Up</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 5px;
+            background-color: #f9ecd0; /* Very light brown background color */
+        }
+    
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .container {
+            background-color: #f9ecd0; /* Slightly darker tone for the container */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    
+        .col-md-3.mb-3 {
+            margin-top: 1.5rem;
+        }
+    
+        .btn-primary {
+            background-color: #8B4513;
+            border-color: #8B4513;
+        }
+
+        .card{
+            border-radius: 11px;
+        }
+
+        .card-body {
+            background-color: #e19f69; /* Darker than the page with good contrast */
+            border-radius: 10px; /* Rounded corners for the card body */
+        }
+    </style>    
+</head>
+<body>
+
+    <!-- Login and Sign Up Buttons -->
+    <div class="container text-right">
+        <button class="btn btn-primary mr-2" onclick="redirectTo('login.html')">Login</button>
+        <button class="btn btn-primary" onclick="redirectTo('signup.html')">Sign Up</button>
+        <button class="btn btn-primary" onclick="redirectTo('aboutus.html')">About Us</button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="logo-container" onclick="redirectTo('index.html')">
+                    <img src="images/logo.png" alt="Company Logo">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/signup" method="post">
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter a password" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Sign Up</button>
+                            <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+                            <div id="success-message" class="alert alert-success" style="display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="signup.js"></script>
+
+</body>
+</html>

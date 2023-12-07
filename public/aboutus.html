@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="aboutus.js"></script>
+    <title>Flight Itinerary - About Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 5px;
+            background-color: #f9ecd0;
+        }
+    
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .container {
+            background-color: #f9ecd0; /* Slightly darker tone for the container */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    
+        .btn-primary {
+            background-color: #8B4513;
+            border-color: #8B4513;
+        }
+
+        .card{
+            border-radius: 11px;
+        }
+
+        .card-body {
+            background-color: #e19f69;
+            border-radius: 10px;
+        }
+
+        .team-member-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+    </style>    
+</head>
+<body>
+
+    <!-- Login and Sign Up Buttons -->
+    <div class="container text-right">
+        <button class="btn btn-primary mr-2" onclick="redirectTo('login.html')">Login</button>
+        <button class="btn btn-primary" onclick="redirectTo('signup.html')">Sign Up</button>
+        <button class="btn btn-primary" onclick="redirectTo('aboutus.html')">About Us</button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="logo-container" onclick="redirectTo('index.html')">
+                    <img src="images/logo.png" alt="Company Logo">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mb-4">About Us</h2>
+                        <p>Browny is a flight itinerary finding web project that finds flights using a third party API and then displays them.</p>
+                        <p>The catch is that Browny finds you the destinations along with the flights based on the kind of place you would like to go to.</p>
+                        <h3 class="mt-4 mb-3">Our Team</h3>
+                        <div class="row">
+                            <!-- Team Member 1 -->
+                            <div class="col-md-4">
+                                <div class="team-member-card">
+                                    <h4>Bhaskar Sharma</h4>
+                                    <p>Neptun: PPAFNW</p>
+                                    <a href="https://github.com/capnspek">Github: capnspek</a>
+                                </div>
+                            </div>
+                            <!-- Team Member 2 -->
+                            <div class="col-md-4">
+                                <div class="team-member-card">
+                                    <h4>Jwana Naber</h4>
+                                    <p>Neptun: UKUICU</p>
+                                    <a href="https://github.com/jwanan">Github: jwanan</a>
+                                </div>
+                            </div>
+                            <!-- Team Member 3 -->
+                            <div class="col-md-4">
+                                <div class="team-member-card">
+                                    <h4>Mohammad Saleem</h4>
+                                    <p>Supervisor</p>
+                                    <a href="https://github.com/mohammadalabed">Github: mohammadalabed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
