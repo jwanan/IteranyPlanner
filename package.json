@@ -1,7 +1,7 @@
 {
   "name": "browny",
-  "author": "Bhaskar Sharma and Jwana Naber"
-  "description": "Flight itirenary planner."
+  "author": "Bhaskar Sharma and Jwana Naber",
+  "description": "Flight itirenary planner.",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
